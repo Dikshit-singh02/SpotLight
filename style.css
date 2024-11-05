@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: #f4f4f9;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
   
   h1 {
     text-align: center;
-    color: #333;
+    color: hsl(hue, saturation, lightness);
   }
   
   .submission-form, .news-feed {
@@ -87,5 +87,15 @@
 
 
 
-
+  body {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
   
