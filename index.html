@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crowdsourced News Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crowdsourced News Platform</h1>
+    
+    <!-- News Submission Form -->
+    <section class="submission-form">
+      <h2>Submit a News Article</h2>
+      <input type="text" id="newsTitle" placeholder="Article Title">
+      <input type="text" id="newsLink" placeholder="Article Link">
+      <button onclick="submitNews()">Submit</button>
+    </section>
+
+    <!-- News Feed Section -->
+    <section class="news-feed">
+      <h2>Trending News</h2>
+      <div id="newsList"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
